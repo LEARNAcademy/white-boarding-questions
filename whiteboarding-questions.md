@@ -62,8 +62,8 @@ console.log(makeEmCaps(arrayOfWOrds))
 **Student 1:**  
 TECH QUESTIONS:  
 1) What are your strengths as a developer?  
-2) What is the difference between equality operators and relational operators?  
-3) What is a branch?  
+2) What is the difference between a `+` when dealing with numbers and a `+` when dealing with strings?
+3) Compare and contrast equality operators and relational operators.    
 
 PROMPT:  
 As a developer you are tasked with calculating some information for a farmer. The farmer has chickens (2 legs), goats (4 legs) and horses (4 legs). Create a function that takes in the three animal quantities and returns the total number of legs on the farm.
@@ -73,8 +73,7 @@ INSTRUCTOR'S NOTES:
 const totalLegs = (chicks, goats, horses) => {
   return chicks * 2 + goats * 4 + horses * 4
 }
-// Most people will overthink this one!
-console.log(totalLegs(5, 6, 3))
+// Most people will overthink and over code this one!
 ```
 
 **Student 2:**  
@@ -84,20 +83,18 @@ TECH QUESTIONS:
 3) Compare and contrast arrays and objects.  
 
 PROMPT:  
-A group of friends have decided to start a secret society. The name will be the first letter of each of their names, sorted in alphabetical order. Create a function that takes in an array of names and returns the name of the secret society. (Optional stretch: The secret society's name should be entirely uppercased.)
+A group of friends have decided to start a secret society. The name will be the first letter of each of their names. Create a function that takes in an array of names and returns the name of the secret society. (Optional stretch: The secret society's name should be sorted in alphabetical order.)
 
 INSTRUCTOR'S NOTES:
 ```javascript
-// Null, undefined, false, NaN are all falsey values, NaN is of type "number"
+--> example input: ["austin", "sarah", "mina"]
 
 secretSociety = (array) => {
-  // can pass an array or individual names
   // can use substring, charAt, [0], etc
   // note that .sort() will treat lower and uppercase letters differently
 }
-console.log(secretSociety(["rachael", "sarah", "mina"]))
---> "mrs"
---> "MRS" (stretch)
+--> "asm"
+--> (STRETCH) "ams"
 ```
 
 [ Back to the Top ](#white-board-exercises)
