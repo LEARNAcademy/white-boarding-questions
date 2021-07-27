@@ -123,9 +123,7 @@ console.log(capitalizer("hey there learn student"))
 ```
 ```ruby
 def capitalizer string
-  # split, map
-  # capitalize method
-  # join
+  # logic
 end
 puts capitalizer 'hey there learn student'
 --> 'Hey There Learn Student'
