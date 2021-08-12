@@ -220,7 +220,7 @@ WHERE plant_species LIKE 'P%'
 TECH QUESTIONS:  
 1) What makes you a good teammate?  
 2) What is the difference between a JavaScript function using the keyword function and a function using the arrow syntax?  
-3) Verbally psuedocode the procees of determining if a number is prime. (A Prime number is one divisible only by one and itself. Ex: 3, 5, 7, 11, 13)
+3) Verbally psuedocode the procees of determining if a number is prime. (A prime number is one divisible only by one and itself. Ex: 3, 5, 7, 11, 13)
 
 PROMPT:  
 Write a function that takes in a string and checks if the string is a palindrome. (Can be done in JavaScript or Ruby)
