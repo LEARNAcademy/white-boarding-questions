@@ -37,9 +37,9 @@ console.log(filterArray(testArray, "string"))
 
 **Student 2:**  
 TECH QUESTIONS:  
-1) What drew you to learn development?  
-2) What is a higher-order function? Can you give me three examples of higher-order functions?  
-3) How is a higher-order function different from a custom arrow function?
+1) Why did you decide to learn development?  
+2) What is a function? Why would you use one?  
+3) If your function logs undefined, what can you do to troubleshoot this problem?
 
 CODE PROMPT:  
 As a developer, you are given an array of english words. Create a function that returns an array with the words in all uppercase letters.
