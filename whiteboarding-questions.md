@@ -99,7 +99,7 @@ secretSociety = (array) => {
 
 [ Back to the Top ](#white-board-exercises)
 
-### Week 4: React
+### Week 4: Ruby
 
 **Student 1:**  
 TECH QUESTIONS:  
