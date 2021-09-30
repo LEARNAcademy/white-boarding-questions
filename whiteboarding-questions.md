@@ -99,16 +99,16 @@ secretSociety = (array) => {
 
 [ Back to the Top ](#white-board-exercises)
 
-### Week 4: Ruby
+### Week 4: React
 
 **Student 1:**  
 TECH QUESTIONS:  
 1) What text editor do you use and why?  
-2) Compare and contrast equality operators in JavaScript and Ruby.  
-3) Do all dynamically-typed languages support type coersion?  
+2) What is a DOM event?  
+3) What is the difference between React state and props? 
 
 PROMPT:  
-As a developer, you are given a string containing multiple words. Create a function that capitalizes all the words in the string. (Can be done in JS or Ruby)
+As a developer, you are given a string containing multiple words. Create a function that capitalizes all the words in the string.
 
 INSTRUCTOR'S NOTES:
 ```javascript
@@ -121,28 +121,18 @@ const capitalizer = (string) => {
 console.log(capitalizer("hey there learn student"))
 --> 'Hey There Learn Student'
 ```
-```ruby
-def capitalizer string
-  # logic
-end
-puts capitalizer 'hey there learn student'
---> 'Hey There Learn Student'
-```
 
 **Student 2:**  
 TECH QUESTIONS:  
 1) What operating system do you use and why?  
-2) Compare and contrast floats in JavaScript and Ruby. (Optional stretch: What do you get when you divide 0/0 in each language?)  
+2) What is a virtual DOM?  
 3) What is the difference between a function and a method? Does the distinction matter?  
 
 PROMPT:  
-As a developer, you are given a multi digit number. Write a function that takes the number and returns an array with a single integer at each index. (Can be done in JavaScript or Ruby)
+As a developer, you are given a multi digit number. Write a function that takes the number and returns an array with a single integer at each index.
 
 INSTRUCTOR'S NOTES:
 ```javascript
-console.log(0/0)
---> NaN
-
 // the main challenge is tracking data types and knowing which methods can be applied to which data types
 const splitNum = (number) => {
   return number.toString().split("").map(value => {
@@ -150,22 +140,8 @@ const splitNum = (number) => {
   })
 }
 
-
+splitNum(34832)
 --> [3, 4, 8, 3, 2]
-```
-```ruby
-p 0/0
---> ZeroDivisionError
-p 0.0/0
---> NaN
-
-def split_nums number
-  num.to_s.split("").map do |value|
-    value.to_i
-  end
-end
-puts split_nums 34567
---> [3, 4, 5, 6, 7]
 ```
 
 [ Back to the Top ](#white-board-exercises)
