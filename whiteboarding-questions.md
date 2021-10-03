@@ -150,50 +150,6 @@ splitNum(34832)
 
 **Student 1:**  
 TECH QUESTIONS:  
-1) When working in a group, what role do you find yourself naturally gravitate towards?  
-2) What is a relational database?  
-3) What is an example of a domaine specific language?
-
-PROMPT:  
-(Part 1) As a developer, you have been tasked with creating a database table for a client who sells cookies online. What columns would you recommend to your client to have in the cookie table? (Open to interpretation - just an exercise in thinking through a problem. Optional stretch: What data type would each column have?)
-
-(Part 2) Write a SQL query that will return the type and price of the most expensive cookie in the table.
-
-INSTRUCTOR'S NOTES:  
-Possible columns include type of cookie, price, size, cost of materials, calories, delivery date, delivery location, special instructions... The goal is to get them asking questions and doing some creative thinking.
-```sql
-SELECT type of cookie, price
-FROM cookie
-ORDER BY price DESC
-LIMIT 1
-```
-
-**Student 2:**  
-TECH QUESTIONS:  
-1) Do you consider your personality more outgoing or more reserved?  
-2) What is the difference between a scripting language and a markup language?  
-3) What is SQL?
-
-PROMPT:  
-(Part 1) As a developer, you have been tasked with creating a database table for a client who works in a greenhouse and needs to keep track of the plants for sale. What columns would you recommend to your client to have in the plant table? (Open to interpretation - just an exercise in thinking through a problem. Optional stretch: What data type would each column have?)
-
-(Part 2) Write a SQL query that will return all the plants that start with the letter p.
-
-INSTRUCTOR'S NOTES:  
-Possible columns include plant species name, category, sunlight needs, price, pot size, projected growth, humidity needs, recommended watering/fertilizer schedule... The goal is to get them asking questions and doing some creative thinking.
-
-```sql
-SELECT plant_species
-FROM plant
-WHERE plant_species LIKE 'P%'
-```
-
-[ Back to the Top ](#white-board-exercises)
-
-### Week 6: Full-stack Rails
-
-**Student 1:**  
-TECH QUESTIONS:  
 1) What makes you a good teammate?  
 2) What is the difference between a JavaScript function using the keyword function and a function using the arrow syntax?  
 3) Verbally psuedocode the procees of determining if a number is prime. (A prime number is one divisible only by one and itself. Ex: 3, 5, 7, 11, 13)
@@ -250,6 +206,50 @@ end
 p reverser 'oh hey there you'
 
 --> "ho yeh ereht uoy"
+```
+
+[ Back to the Top ](#white-board-exercises)
+
+### Week 6: Full-stack Rails
+
+**Student 1:**  
+TECH QUESTIONS:  
+1) When working in a group, what role do you find yourself naturally gravitate towards?  
+2) What is a relational database?  
+3) What is an example of a domaine specific language?
+
+PROMPT:  
+(Part 1) As a developer, you have been tasked with creating a database table for a client who sells cookies online. What columns would you recommend to your client to have in the cookie table? (Open to interpretation - just an exercise in thinking through a problem. Optional stretch: What data type would each column have?)
+
+(Part 2) Write a SQL query that will return the type and price of the most expensive cookie in the table.
+
+INSTRUCTOR'S NOTES:  
+Possible columns include type of cookie, price, size, cost of materials, calories, delivery date, delivery location, special instructions... The goal is to get them asking questions and doing some creative thinking.
+```sql
+SELECT type of cookie, price
+FROM cookie
+ORDER BY price DESC
+LIMIT 1
+```
+
+**Student 2:**  
+TECH QUESTIONS:  
+1) Do you consider your personality more outgoing or more reserved?  
+2) What is the difference between a scripting language and a markup language?  
+3) What is SQL?
+
+PROMPT:  
+(Part 1) As a developer, you have been tasked with creating a database table for a client who works in a greenhouse and needs to keep track of the plants for sale. What columns would you recommend to your client to have in the plant table? (Open to interpretation - just an exercise in thinking through a problem. Optional stretch: What data type would each column have?)
+
+(Part 2) Write a SQL query that will return all the plants that start with the letter p.
+
+INSTRUCTOR'S NOTES:  
+Possible columns include plant species name, category, sunlight needs, price, pot size, projected growth, humidity needs, recommended watering/fertilizer schedule... The goal is to get them asking questions and doing some creative thinking.
+
+```sql
+SELECT plant_species
+FROM plant
+WHERE plant_species LIKE 'P%'
 ```
 
 [ Back to the Top ](#white-board-exercises)
