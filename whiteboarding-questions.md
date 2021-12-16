@@ -13,6 +13,41 @@ We introduce white boarding during the second week of the class.
 - [ Week 9: Apartment App ](#week-9-apartment-app)
 - [ Great Resource ](https://www.interviewcake.com/coding-interview-tips) for technical interviews
 
+### Process
+Students will be divided into groups and paired with one instructor or resident (the interviewer). During each weekly session two students will be interviewed. The students who are not being interviewed should follow along and attempt each question on their own.
+
+Each interview should take 20-30 minutes. The interviewer will ask the student three questions and give one code prompt.
+
+The questions consist of one generic interview question and two technical questions. The difficulty of these questions varies. Some topics are covered in class and others have not been covered. This is for the purpose of creating a real-world interview experience allowing the students to work through nerves and practice answering questions they don't know.
+
+The code prompt should mimic a "real life" white boarding session. The student can use a text medium such as the notes app or a markdown file to code out the prompt.  
+
+During the coding portion of the interview the student should:
+- write down the prompt and confirm the accuracy with the interviewer.
+- establish an example input and output and confirm the accuracy with the interviewer.
+- list out their plan in regular words before beginning to code.
+- communicate constantly and think out loud.
+
+The interviewer should:
+- be engaged.
+- remember the students are VERY nervous.
+- allow the students to struggle but NOT fail.
+- provide constructive feedback at the end of each interview.
+- review all questions at the end of each interview expanding on the topics so they have the opportunity to learn.
+- manage the time spent on each interview so the total session takes about one hour.
+- send the students back to the main room at the end of the session.
+- provide feedback on each student to the instructors.
+
+### Feedback
+At the end of the session, each interview should provide feedback to the instruction team via Slack.
+
+Feedback for each interviewee should include:
+- the student's first name.
+- a brief impression of the student's ability to communicate.
+- a brief over all impression of the student's current technical ability.
+- any questions the student failed to answer.
+- whether the student followed the code prompt expectations as noted above.
+
 ### Week 2: Intro to JavaScript
 
 **Student 1**  
@@ -105,7 +140,7 @@ secretSociety = (array) => {
 TECH QUESTIONS:  
 1) What text editor do you use and why?  
 2) What is a DOM event?  
-3) What is the difference between React state and props? 
+3) What is the difference between React state and props?
 
 PROMPT:  
 As a developer, you are given a string containing multiple words. Create a function that capitalizes all the words in the string.
