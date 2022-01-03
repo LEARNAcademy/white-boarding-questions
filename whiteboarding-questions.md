@@ -2,19 +2,19 @@
 
 We introduce white boarding during the second week of the class.
 
-- [ Intro to White Boarding ](./intro-to-whiteboarding.md#white-boarding)
-- [ Week 2: JavaScript ](#week-2-intro-to-javascript)
-- [ Week 3: JavaScript and React ](#week-3-javascript-and-react)
-- [ Week 4: Ruby ](#week-4-ruby)
-- [ Week 5: SQL and Rails ](#week-5-sql-and-rails)
-- [ Week 6: Full-stack Rails ](#week-6-full-stack-rails)
-- [ Week 7: PD Week Technical Interviews ](./pd-week-tech-interviews.md/#pd-week-technical-interviews)
-- [ Week 8: Cat Tinder ](#week-8-cat-tinder)
-- [ Week 9: Apartment App ](#week-9-apartment-app)
-- [ Great Resource ](https://www.interviewcake.com/coding-interview-tips) for technical interviews
+- [Intro to White Boarding](./intro-to-whiteboarding.md#white-boarding)
+- [Week 2: JavaScript](#week-2-intro-to-javascript)
+- [Week 3: JavaScript and React](#week-3-javascript-and-react)
+- [Week 4: Ruby](#week-4-ruby)
+- [Week 5: SQL and Rails](#week-5-sql-and-rails)
+- [Week 6: Full-stack Rails](#week-6-full-stack-rails)
+- [Week 7: PD Week Technical Interviews](./pd-week-tech-interviews.md/#pd-week-technical-interviews)
+- [Week 8: Cat Tinder](#week-8-cat-tinder)
+- [Week 9: Apartment App](#week-9-apartment-app)
+- [Great Resource](https://www.interviewcake.com/coding-interview-tips) for technical interviews
 
 ### Process
-Students will be divided into groups and paired with one instructor or resident (the interviewer). During each weekly session two students will be interviewed. The students who are not being interviewed should follow along and attempt each question on their own.
+Students will be divided into groups and matched with one instructor or resident (the interviewer). During each weekly session two students will be interviewed. The students who are not being interviewed should follow along and attempt each question silently on their own.
 
 Each interview should take 20-30 minutes. The interviewer will ask the student three questions and give one code prompt.
 
@@ -33,7 +33,7 @@ The interviewer should:
 - remember the students are VERY nervous.
 - allow the students to struggle but NOT fail.
 - provide constructive feedback at the end of each interview.
-- review all questions at the end of each interview expanding on the topics so they have the opportunity to learn.
+- review all questions at the end of each interview expanding on the topics so all students have the opportunity to learn.
 - manage the time spent on each interview so the total session takes about one hour.
 - send the students back to the main room at the end of the session.
 - provide feedback on each student to the instructors.
@@ -53,20 +53,25 @@ Feedback for each interviewee should include:
 **Student 1**  
 TECH QUESTIONS:  
 1) What excites you about coding?  
-2) What is the difference between an array's value and index? As a developer, why is it important to distinguish between the two?  
+2) What is the difference between an array's index and value? As a developer, why is it important to distinguish between the two?  
 3) What is iteration?
 
 CODE PROMPT:  
-As a developer, you are given an array of mixed data. Create a function that takes the array and returns an array with only the the values that that are strings.
+As a developer, you are given an array of mixed data. Create a function that takes in the array and returns an array with only the values that are strings.
 
 INSTRUCTOR'S NOTES:
+- An index in an array is the location of each item. Arrays are zero-indexed. The value is the content that is at each index. The value must be a data type recognized by JavaScript. Knowing the difference between the two is important to be able to successfully access the data in an array.
+- Iteration is repeating a specific action until a condition is met.
 ```javascript
+// Example input:
 let testArray = [3, 4, 5, true, false, true, "hello", "hey", "yo"]
 
 const filterArray = (array) => {
-  // can use filter and typeof "string"
+  return array.filter(value => typeof value === "string")
+  // will need to iterate over the array - can use a for loop or filter
+  // will need to make an evaluation of each value in the array - can use typeof
 }
-console.log(filterArray(testArray, "string"))
+console.log(filterArray(testArray))
 // Output: ["hello", "hey", "yo"]
 ```
 
@@ -74,23 +79,29 @@ console.log(filterArray(testArray, "string"))
 TECH QUESTIONS:  
 1) Why did you decide to learn development?  
 2) What is a function? Why would you use one?  
-3) If your function logs undefined, what can you do to troubleshoot this problem?
+3) If a JavaScript function logs undefined what can you do to troubleshoot this problem?
 
 CODE PROMPT:  
 As a developer, you are given an array of english words. Create a function that returns an array with the words in all uppercase letters.
 
 INSTRUCTOR'S NOTES:
+- A function is an encapsulated piece of code functionality. It makes code logic reusable.
+- If a JavaScript function logs undefined ensure your function has a return.
 ```javascript
+// Example input:
 let arrayOfWOrds = ["i", "am", "so", "excited"]
 
+// A common miscommunication will happen here on the difference between capitalization and all uppercase letters. This prompt is looking for the latter.
 const makeEmCaps = (array) => {
-  // can use map and .toUpperCase
+  // will need to iterate over the array - can use a for loop or map
+  // will need to use .toUpperCase()
+  return array.map(value => value.toUpperCase())
 }
 console.log(makeEmCaps(arrayOfWOrds))
 // Output: ["I", "AM", "SO", "EXCITED"]
 ```
 
-[ Back to the Top ](#white-board-exercises)
+[Back to the Top](#white-board-exercises)
 
 ### Week 3: JavaScript and React
 
@@ -101,38 +112,48 @@ TECH QUESTIONS:
 3) Compare and contrast equality operators and relational operators.    
 
 PROMPT:  
-As a developer you are tasked with calculating some information for a farmer. The farmer has chickens (2 legs), goats (4 legs) and horses (4 legs). Create a function that takes in the three animal quantities and returns the total number of legs on the farm.
+As a developer, you are tasked with calculating some information for a farmer. The farmer has chickens, goats, and horses. Create a function that takes in the three quantities of each animal and returns the total number of legs on the farm. (We can assume all animals have the expected number of legs for their given species.)
 
 INSTRUCTOR'S NOTES:
+- A plus sign applied to the JavaScript number data type will perform a mathematical operation. The plus sign applied to the JavaScript string data type will perform concatenation.
+- The similarities between equality (==, ===) and relational (<, >, <=, >=) operators are they both are used for comparisons and both return a Boolean value. The differences are relational operators only compare numbers where equality operators can be used on any data type.
 ```javascript
-const totalLegs = (chicks, goats, horses) => {
-  return chicks * 2 + goats * 4 + horses * 4
-}
 // Most people will overthink and over code this one!
+
+const totalLegs = (chickens, goats, horses) => {
+  return chickens * 2 + goats * 4 + horses * 4
+}
+console.log(totalLegs(3, 4, 5))
+// Output: 42
 ```
 
 **Student 2:**  
 TECH QUESTIONS:  
 1) What are your weaknesses as a developer?  
-2) What is the difference between null and undefined?  
-3) Compare and contrast arrays and objects.  
+2) What is the difference between null and undefined in JavaScript?  
+3) Compare and contrast JavaScript arrays and objects.  
 
 PROMPT:  
-A group of friends have decided to start a secret society. The name will be the first letter of each of their names. Create a function that takes in an array of names and returns the name of the secret society. (Optional stretch: The secret society's name should be sorted in alphabetical order.)
+A group of friends have decided to start a secret society. The name will be the first letter of each of their names. Create a function that takes in an array of names and returns the name of the secret society.
 
 INSTRUCTOR'S NOTES:
+- Null is a data type that represents the intentional absence of value while undefined is the value of a variable that has been declared but not assigned a value.
+- The similarities between JavaScript objects and arrays are they are both non-primitive data types and collections of data. The differences are arrays are wrapped in square braces and the values are referenced by index whereas objects are wrapped in curly braces and the values are referenced by keys.
 ```javascript
---> example input: ["austin", "sarah", "mina"]
+// Example input:
+let names = ["elyse", "austin", "sarah"]
 
-secretSociety = (array) => {
-  // can use substring, charAt, [0], etc
-  // note that .sort() will treat lower and uppercase letters differently
+const secretSociety = (array) => {
+  return array.map(name => name[0]).join("")
+  // will need to iterate over the array - can use map or for loop
+  // will need to extract the first letter of each string - can use substring, slice, charAt, [0], etc
+  // will need to convert the array into a string - can use join
 }
---> "asm"
---> (STRETCH) "ams"
+console.log(secretSociety(names))
+// Output: "eas"
 ```
 
-[ Back to the Top ](#white-board-exercises)
+[Back to the Top](#white-board-exercises)
 
 ### Week 4: Ruby
 
@@ -179,7 +200,7 @@ splitNum(34832)
 --> [3, 4, 8, 3, 2]
 ```
 
-[ Back to the Top ](#white-board-exercises)
+[Back to the Top](#white-board-exercises)
 
 ### Week 5: SQL and Rails
 
@@ -243,7 +264,7 @@ p reverser 'oh hey there you'
 --> "ho yeh ereht uoy"
 ```
 
-[ Back to the Top ](#white-board-exercises)
+[Back to the Top](#white-board-exercises)
 
 ### Week 6: Full-stack Rails
 
@@ -287,7 +308,7 @@ FROM plant
 WHERE plant_species LIKE 'P%'
 ```
 
-[ Back to the Top ](#white-board-exercises)
+[Back to the Top](#white-board-exercises)
 
 ### Week 8: Cat Tinder
 
@@ -329,7 +350,7 @@ cards = (array) => {
 INSTRUCTOR'S NOTES:   
 The cards function is shuffling an array based on the random number being positive or negative.
 
-[ Back to the Top ](#white-board-exercises)
+[Back to the Top](#white-board-exercises)
 
 ### Week 9: Apartment App
 
@@ -405,4 +426,4 @@ const getMiddle = (string) => {
 }
 ```
 
-[ Back to the Top ](#white-board-exercises)
+[Back to the Top](#white-board-exercises)
