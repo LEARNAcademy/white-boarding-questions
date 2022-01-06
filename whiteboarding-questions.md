@@ -7,8 +7,8 @@ We introduce white boarding during the second week of the class.
 - [Week 2: JavaScript](#week-2-intro-to-javascript)
 - [Week 3: JavaScript and React](#week-3-javascript-and-react)
 - [Week 4: React and Ruby](#week-4-react-and-ruby)
-- [Week 5: SQL and Rails](#week-5-sql-and-rails)
-- [Week 6: Full-stack Rails](#week-6-full-stack-rails)
+- [Week 5: Ruby and SQL](#week-5-ruby-and-sql)
+- [Week 6: Ruby on Rails](#week-6-rails)
 - [Week 7: PD Week Technical Interviews](./pd-week-tech-interviews.md/#pd-week-technical-interviews)
 - [Week 8: Cat Tinder](#week-8-cat-tinder)
 - [Great Resource](https://www.interviewcake.com/coding-interview-tips) for technical interviews
@@ -175,6 +175,7 @@ PROMPT:
 As a developer, you are given an array of numbers. Create a function that takes in the array and returns an array with the numbers in ascending order.
 
 INTERVIEWER'S NOTES:
+- 1 - Looking for a bit of self-reflection here. Looking for the student to have a reason for their choice other than "it is what we used in class." Encourage them to talk about why they like the interface as well as any plugins, themes, or snippets they use.
 - 2 - DOM stands for Document Object Model which is a visual representation of the markup and code logic that makes up a website.
 - 3 - React state is a specialized object used for data storage in a class-based component. Props are a specialized object that allows data to flow between components. State can be modified while props are read-only.
 ```javascript
@@ -201,7 +202,8 @@ PROMPT:
 As a developer, you are given a multi digit number. Write a function that takes the number and returns an array with a single integer at each index.
 
 INTERVIEWER'S NOTES:
-- 2 - The virtual DOM is light-weight representation of the DOM that listens for any diff created by user interactions. The diff can be reconciled more efficiently than regular DOM updates since only the nodes that have changes are updated.
+- 1 - Looking to see if the student can navigate a potentially loaded interview question. Encourage the student to defend their choice while still being open minded about other technologies.
+- 2 - The virtual DOM is light-weight representation, or preview layer of the DOM that listens for any diff created by user interactions. The diff can be reconciled more efficiently than regular DOM updates since only the nodes that have changes are updated.
 - 3 - A function is a stand-alone snippet of code functionality. A method is a function that belongs to a class. Methods do not have independent existence. The distinction matters in knowing what data can be accessed by the function/method and how they are invoked.
 ```javascript
 // The main challenge is tracking data types and knowing which methods can be applied to which data types.
@@ -214,7 +216,6 @@ const splitNum = (number) => {
   // will need to iterate to convert the string back to a number
   return number.toString().split("").map(value => parseInt(value))
 }
-
 console.log(splitNum(multiDigitNumber))
 // Output: [1, 4, 2]
 ```
@@ -232,32 +233,42 @@ TECH QUESTIONS:
 3. Verbally pseudocode the process of determining if a number is prime. (A prime number is one divisible only by one and itself. Ex: 3, 5, 7, 11, 13)
 
 PROMPT:  
-Write a function that takes in a string and checks if the string is a palindrome. (Can be done in JavaScript or Ruby)
+Write a function that takes in a string and checks if the string is a palindrome. (Can be done in JavaScript or Ruby.)
 
 INTERVIEWER'S NOTES:
-- 2 - The difference between the arrow syntax and the keyword function is scope. Arrow functions have a shorter syntax and can be written without curly braces or parentheses as long as there is only one expression.
+- 1 - This is a spin on the classic "what are your strengths" question. Looking for the ability to speak confidently about their experiences. Encourage the student to find a short anecdote they can keep handy. Using pair programming as an example is a great option.
+- 2 - Arrow functions have a shorter syntax and can be written without curly braces, parentheses, or the keyword return as long as there is only one expression. Arrow expressions use the scope of their parent where the function keyword creates its own internal scope.
+- 3 - Using iteration like a for loop, with the iteration starting from 2 and incrementing one each time, ending one before the given number, use the modulo operator to see if any numbers return no remainder.
 ```javascript
 const palindrome = (string) => {
   // JavaScript reverse method only works on arrays
-  // can add dropping the string to lowercase for edge cases
-  if(string.toLowerCase() === string.toLowerCase().split("").reverse().join("")){
+  // STRETCH: consider casing
+  if(string === string.split("").reverse().join("")){
     return `${string} is a palindrome!`
   } else {
     return `${string} is NOT a palindrome!`
   }
 }
+console.log(palindrome("racecar"))
+// Output: "racecar is a palindrome!"
+console.log(palindrome("hello"))
+// Output: "hello is NOT a palindrome!"
 ```
 ```ruby
 def palindrome(string)
-  # can add dropping the string to lowercase for edge cases
-  if string.downcase.reverse == string.downcase
+  # Ruby reverse method works on strings and arrays
+  # STRETCH: consider casing  
+  if string.reverse == string
     return "#{string} is a palindrome!"
   else
     return "#{string} is NOT a palindrome!"
   end
 end
+p palindrome('racecar')
+# Output: 'racecar is a palindrome!'
+p palindrome('hello')
+# Output: 'hello is NOT a palindrome!'
 ```
-
 
 **Student 2:**  
 TECH QUESTION:  
@@ -266,41 +277,65 @@ TECH QUESTION:
 3. What would you get if you add the string "hello" to the number 3? (In JavaScript vs Ruby?)
 
 PROMPT:  
-As a developer, you are given a string of a single word. Create a function that takes in the string and returns the middle letter. (Can be done in JavaScript or Ruby)
+As a developer, you are given a string of a single word. Create a function that takes in the string and returns the middle letter(s). (Can be done in JavaScript or Ruby.)
 
 INTERVIEWER'S NOTES:  
-- 2 - A stack overflow is a when a program tries to execute more actions that it has memory to perform.  
--
+- 1 - Looking for a bit of self-reflection here. Encourage the student to think about their individual priorities and learning needs.
+- 2 - A stack overflow is a when a program tries to execute more actions than it has memory to perform.  
+- 3 - When adding a string and a number JavaScript will perform type coercion and concatenate the two items returning the string "hello3". Ruby will return an error as the data types are not compatible for either addition or concatenation.
 
 ```javascript
 console.log("hello" + 3)
 --> "hello3"
 
-// The code prompt can be made simpler by giving the student either an even or odd length string.
 const getMiddle = (string) => {
+  // even length strings will return two letters and odd length strings will return one letter
   let mid = string.length / 2
-  if(string.length%2 === 0){
+  if(string.length % 2 === 0){
     return string[mid - 1] + string[mid]
   } else {
     return string[Math.floor(mid)]
   }
 }
 
-console.log(getMiddle("oh hey there you"))
+console.log(getMiddle("hootenanny"))
+// Output: "en"
+console.log(getMiddle("lollygagger"))
+// Output: "g"
 
-// Output: "ho yeh ereht uoy"
+// If the student is struggling, the code prompt can be made simpler by with this modification: As a developer, you are given a string of a single word that is an odd number of characters.
+
+const getMiddleOfOddLength = (string) => {
+  let mid = string.length / 2
+  return string[Math.floor(mid)]
+}
+console.log(getMiddleOfOddLength("world"))
+// Output: "r"
 ```
 ```ruby
 p 'hello' + 3
---> TypeError
-```
+=> TypeError (no implicit conversion of Integer into String)
 
+def get_middle(string)
+  middle = string.length / 2
+  if string.length % 2 == 0
+    string[middle - 1] + string[middle]
+  else
+    string[middle.round]
+  end
+end
+
+p get_middle('hootenanny')
+# Output: 'en'
+p get_middle('lollygagger')
+# Output: 'g'
+```
 
 [Back to the Top](#white-board-exercises)
 
-### Week 6: Rails
-
 ---
+
+### Week 6: Rails
 
 **Student 1:**  
 TECH QUESTIONS:  
