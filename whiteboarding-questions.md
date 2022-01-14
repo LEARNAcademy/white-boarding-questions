@@ -238,7 +238,7 @@ Write a function that takes in a string and checks if the string is a palindrome
 INTERVIEWER'S NOTES:
 - 1 - This is a spin on the classic "what are your strengths" question. Looking for the ability to speak confidently about their experiences. Encourage the student to find a short anecdote they can keep handy. Using pair programming as an example is a great option.
 - 2 - Arrow functions have a shorter syntax and can be written without curly braces, parentheses, or the keyword return as long as there is only one expression. Arrow expressions use the scope of their parent where the function keyword creates its own internal scope.
-- 3 - Using iteration like a for loop, with the iteration starting from 2 and incrementing one each time, ending one before the given number, use the modulo operator to see if any numbers return no remainder.
+- 3 - Using iteration like a for loop, with the iteration starting from 2 and incrementing one each time, ending one before the given number, use the modulo operator to see if any numbers return no remainder. NOTE: The student may not be familiar with prime numbers. In that case have them reason through the concept of a prime number. The goal is to get them problem solving out loud.
 ```javascript
 const palindrome = (string) => {
   // JavaScript reverse method only works on arrays
@@ -348,10 +348,11 @@ PROMPT:
 
 (Part 2) Write a SQL query that will return the type and price of the most expensive cookie in the table.
 
-INTERVIEWER'S NOTES:  
-- A relational database organizes information into tables that have rows and columns.
+INTERVIEWER'S NOTES:
+- 1 - This question is partially self-reflection on whether the student feels more comfortable in a leader role or a support role. Many students will discuss whether they prefer "driving" or "navigating" during a pairing session. Encourage them to think bigger and broader than just pair programming.  
+- 2 - A relational database organizes information into tables that have columns which define the data and rows that are instances of the data.
 - A domaine specific language is specified to one particular task. Examples are RSpec, HTML, SQL.
-- Part 1: The goal of this section to get them asking questions and doing some creative thinking. Possible columns include type of cookie, price, size, cost of materials, calories, delivery date, delivery location, special instructions, etc.
+- Part 1: The goal of this section to get them asking questions and doing some creative thinking. Possible columns include type of cookie, price, size, cost of materials, calories, delivery date, delivery location, special instructions, etc. Encourage them to share a screen and write down their ideas.
 ```sql
 SELECT type of cookie, price
 FROM cookie
@@ -371,9 +372,10 @@ PROMPT:
 (Part 2) Write a SQL query that will return all the plants that start with the letter p.
 
 INTERVIEWER'S NOTES:  
-- Scripting language performs logic and a markup language creates the presentation or visual aspect of the app.
-- SQL stands for Structure Query Language and is a domaine specific language for querying relational databases.
-- Part 1: The goal of this section to get them asking questions and doing some creative thinking. Possible columns include plant species name, category, sunlight needs, price, pot size, projected growth, humidity needs, recommended watering/fertilizer schedule, etc
+- 1 - This is a spin on asking if the student considers themselves more introverted or extroverted. Encourage the student to have confidence in their answer no matter which they identify with.
+- 2 - Scripting language performs logic and a markup language creates the presentation or visual aspect of the app.
+- 3 - SQL stands for Structure Query Language and is a domaine specific language for querying relational databases.
+- Part 1: The goal of this section to get them asking questions and doing some creative thinking. Possible columns include plant species name, category, sunlight needs, price, pot size, projected growth, humidity needs, recommended watering/fertilizer schedule, etc. Encourage them to share a screen and write down their ideas.
 ```sql
 SELECT plant_species
 FROM plant
