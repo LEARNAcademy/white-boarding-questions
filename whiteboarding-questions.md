@@ -351,7 +351,7 @@ PROMPT:
 INTERVIEWER'S NOTES:
 - 1 - This question is partially self-reflection on whether the student feels more comfortable in a leader role or a support role. Many students will discuss whether they prefer "driving" or "navigating" during a pairing session. Encourage them to think bigger and broader than just pair programming.  
 - 2 - A relational database organizes information into tables that have columns which define the data and rows that are instances of the data.
-- A domaine specific language is specified to one particular task. Examples are RSpec, HTML, SQL.
+- 3 - A domaine specific language is specified to one particular task. Examples are RSpec, HTML, SQL.
 - Part 1: The goal of this section to get them asking questions and doing some creative thinking. Possible columns include type of cookie, price, size, cost of materials, calories, delivery date, delivery location, special instructions, etc. Encourage them to share a screen and write down their ideas.
 ```sql
 SELECT type of cookie, price
