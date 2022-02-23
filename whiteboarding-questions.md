@@ -355,7 +355,7 @@ PROMPT:
 INTERVIEWER'S NOTES:
 - 1 - This question is partially self-reflection on whether the student feels more comfortable in a leader role or a support role. Many students will discuss whether they prefer "driving" or "navigating" during a pairing session. Encourage them to think bigger and broader than just pair programming.  
 - 2 - A relational database organizes information into tables that have columns which define the data and rows that are instances of the data.
-- A domaine specific language is specified to one particular task. Examples are RSpec, HTML, SQL.
+- 3 - A domaine specific language is specified to one particular task. Examples are RSpec, HTML, SQL.
 - Part 1: The goal of this section to get them asking questions and doing some creative thinking. Possible columns include type of cookie, price, size, cost of materials, calories, delivery date, delivery location, special instructions, etc. Encourage them to share a screen and write down their ideas.
 ```sql
 SELECT type of cookie, price
@@ -408,9 +408,11 @@ markTask = (e) => {
 }
 ```
 
-INTERVIEWER'S NOTES:  
-- A Promise is a proxy value used to handle asynchronous actions. The possible states of a Promise can be in one of three states: pending, rejected, or fulfilled.
-- Share this code snippet on your screen. Have the student tell you everything they can about the code. This is from a previous LEARN capstone project that tracked fermentation. The markTask method is from a class-based component in React. It is finding one task from the state object by an id that is coming from an input of some kind, then passing the task variable to a method in the same class and a method in the parent component.   
+INTERVIEWER'S NOTES:
+- 1 - This is one of those generic interview questions that, if answered thoughtfully, will allow the student to show their personality and make a human connection with the interviewer. Encourage the student to give a well-rounded answer and not look at this question as a throw away.
+- 2 - Plenty of options here. :) Encourage the student to take this question as a thoughtful critique not an opportunity to language-bash.
+- 3 - A Promise is a proxy value used to handle asynchronous actions. The possible states of a Promise can be in one of three states: pending, rejected, or fulfilled.
+- Prompt - Share this code snippet on your screen. Have the student tell you everything they can about the code. This is from a previous LEARN capstone project that tracked fermentation. The markTask method is from a class-based component in React. It is finding one task from the state object by an id that is coming from an input of some kind, then passing the task variable to a method in the same class and a method in the parent component.   
 
 **Student 2:**  
 TECH QUESTION:  
@@ -428,7 +430,9 @@ cards = (array) => {
 ```
 
 INTERVIEWER'S NOTES:  
-- Asynchronous programming is allowing your code to have good time management. JavaScript is single threaded meaning that it does one thing at a time. Asynchronous actions allow a process to run separately from the single thread.
-- Share this code snippet on your screen. Have the student tell you everything they can about the code. This is from a previous LEARN capstone project that created randomized flashcards. The cards method is in a class-based React component that holds state. Shuffling an array based on the random number being positive or negative. State is then updated with the newly randomized array.
+- 1 - This question can be interpreted as a technical question or as a personal question. Maybe both.
+- 2 - Encourage the student to come up with specific examples.   
+- 3 - Asynchronous programming is allowing your code to have good time management. JavaScript is single threaded meaning that it does one thing at a time. Asynchronous actions allow a process to run separately from the single thread.
+- Prompt: Share this code snippet on your screen. Have the student tell you everything they can about the code. This is from a previous LEARN capstone project that created randomized flashcards. The cards method is in a class-based React component that holds state. Shuffling an array based on the random number being positive or negative. State is then updated with the newly randomized array.
 
 [Back to the Top](#white-board-exercises)
