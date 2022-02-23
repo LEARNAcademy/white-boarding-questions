@@ -62,6 +62,7 @@ CODE PROMPT:
 As a developer, you are given an array of mixed data. Create a function that takes in the array and returns an array with only the values that are strings.
 
 INTERVIEWER'S NOTES:
+- 1 - The goal here is to get the student to start to formulate a very common soft-skills interview question. Encourage the student to come up with a solid, well-practiced answer.
 - 2 - An index in an array is the location of each item. Arrays are zero-indexed. The value is the content that is at each index. The value must be a data type recognized by JavaScript. Knowing the difference between the two is important to be able to successfully access the data in an array.
 - 3 - Iteration is repeating a specific action until a condition is met.
 ```javascript
@@ -84,9 +85,10 @@ TECH QUESTIONS:
 3. If a JavaScript function logs undefined what can you do to troubleshoot this problem?
 
 CODE PROMPT:  
-As a developer, you are given an array of english words. Create a function that returns an array with the words in all uppercase letters.
+As a developer, you are given an array of English words. Create a function that returns an array with the words in all uppercase letters.
 
 INTERVIEWER'S NOTES:
+- 1 - A softball-style question that is common for career transitioners. It is a great opportunity for connecting with the interviewer. Encourage the student to come up with a solid, well-practiced answer.
 - 2 - A function is an encapsulated piece of code functionality. It makes code logic reusable.
 - 3 - If a JavaScript function logs undefined ensure your function has a return.
 ```javascript
@@ -120,6 +122,7 @@ PROMPT:
 As a developer, you are tasked with calculating some information for a farmer. The farmer has chickens, goats, and horses. Create a function that takes in the three quantities of each animal and returns the total number of legs on the farm.
 
 INTERVIEWER'S NOTES:
+- 1 - A classic interview question. Encourage the student to be humble and honest.
 - 2 - A plus sign applied to the JavaScript number data type will perform a mathematical operation. The plus sign applied to the JavaScript string data type will perform concatenation.
 - 3 - The similarities between equality (==, ===) and relational (<, >, <=, >=) operators are they both are used for comparisons and both return a Boolean value. The differences are relational operators only compare numbers where equality operators can be used on any data type.
 ```javascript
@@ -143,6 +146,7 @@ PROMPT:
 A group of friends have decided to start a secret society. The name will be the first letter of each of their names. Create a function that takes in an array of names and returns the name of the secret society.
 
 INTERVIEWER'S NOTES:
+- 1 - This is a spin on the classic "trap" interview question. Encourage the student to be humble and honest but turn the question into an opportunity to talk about learning, growth, and goals.
 - 2 - Null is a data type that represents the intentional absence of value while undefined is the value of a variable that has been declared but not assigned a value.
 - 3 - The similarities between JavaScript objects and arrays are they are both non-primitive data types and collections of data. The differences are arrays are wrapped in square braces and the values are referenced by index whereas objects are wrapped in curly braces and.the values are referenced by keys.
 ```javascript
