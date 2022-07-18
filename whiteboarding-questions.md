@@ -54,7 +54,7 @@ Feedback for each interviewee should include:
 
 **Student 1**  
 TECH QUESTIONS:  
-1. What excites you about coding?  
+1. How did you get into software development and what about the field was most interesting to you?
 2. What is the difference between an array's index and value? As a developer, why is it important to distinguish between the two?  
 3. What is iteration?
 
@@ -80,7 +80,7 @@ console.log(onlyStrings(mixedDataArray))
 
 **Student 2:**  
 TECH QUESTIONS:  
-1. Why did you decide to learn development?  
+1. Why did you decide to learn software development?  
 2. What is a function? Why would you use one?  
 3. If a JavaScript function logs undefined what can you do to troubleshoot this problem?
 
@@ -171,7 +171,7 @@ console.log(secretSociety(names))
 
 **Student 1:**  
 TECH QUESTIONS:  
-1. What text editor do you use and why?  
+1. What are your career goals?
 2. What is the DOM?  
 3. What is the difference between React state and props?
 
@@ -179,7 +179,7 @@ PROMPT:
 As a developer, you are given an array of numbers. Create a function that takes in the array and returns an array with the numbers in ascending order.
 
 INTERVIEWER'S NOTES:
-- 1 - Looking for a bit of self-reflection here. Looking for the student to have a reason for their choice other than "it is what we used in class." Encourage them to talk about why they like the interface as well as any plugins, themes, or snippets they use.
+- 1 - Looking for a future-thinking answer with more details than just "get a job" or "become a developer." Encourage the student to find a deeper and more personal motivation.
 - 2 - DOM stands for Document Object Model which is a visual representation of the markup and code logic that makes up a website.
 - 3 - React state is a specialized object used for data storage in a class-based component. Props are a specialized object that allows data to flow between components. State can be modified while props are read-only.
 ```javascript
@@ -198,7 +198,7 @@ console.log(ascendingOrder(exampleNumbersArray))
 
 **Student 2:**  
 TECH QUESTIONS:  
-1. What operating system do you use and why?
+1. What motivates you?
 2. What is a virtual DOM?  
 3. What is the difference between a function and a method? Does the distinction matter?  
 
@@ -206,7 +206,7 @@ PROMPT:
 As a developer, you are given a multi digit number. Write a function that takes the number and returns an array with a single integer at each index.
 
 INTERVIEWER'S NOTES:
-- 1 - Looking to see if the student can navigate a potentially loaded interview question. Encourage the student to defend their choice while still being open minded about other technologies.
+- 1 - This question can be an opportunity to sell yourself as a developer. Encourage the student to think of a more creative motivation that "to get a job."
 - 2 - The virtual DOM is light-weight representation, or preview layer of the DOM that listens for any diff created by user interactions. The diff can be reconciled more efficiently than regular DOM updates since only the nodes that have changes are updated.
 - 3 - A function is a stand-alone snippet of code functionality. A method is a function that belongs to a class. Methods do not have independent existence. The distinction matters in knowing what data can be accessed by the function/method and how they are invoked.
 ```javascript
@@ -343,7 +343,7 @@ p get_middle('lollygagger')
 
 **Student 1:**  
 TECH QUESTIONS:  
-1. When working in a group, what role do you find yourself naturally gravitate towards?  
+1. What kind of management style do you prefer in your managers?  
 2. What is a relational database?  
 3. What is an example of a domaine specific language?
 
@@ -353,7 +353,7 @@ PROMPT:
 (Part 2) Write a SQL query that will return the type and price of the most expensive cookie in the table.
 
 INTERVIEWER'S NOTES:
-- 1 - This question is partially self-reflection on whether the student feels more comfortable in a leader role or a support role. Many students will discuss whether they prefer "driving" or "navigating" during a pairing session. Encourage them to think bigger and broader than just pair programming.  
+- 1 - This question is introspective and meant to inspire the student to think about what they need from a mentor during internship.
 - 2 - A relational database organizes information into tables that have columns which define the data and rows that are instances of the data.
 - 3 - A domaine specific language is specified to one particular task. Examples are RSpec, HTML, SQL.
 - Part 1: The goal of this section to get them asking questions and doing some creative thinking. Possible columns include type of cookie, price, size, cost of materials, calories, delivery date, delivery location, special instructions, etc. Encourage them to share a screen and write down their ideas.
@@ -366,7 +366,7 @@ LIMIT 1
 
 **Student 2:**  
 TECH QUESTIONS:  
-1. Do you consider your personality more outgoing or more reserved?  
+1. What are your ideal traits for a coworker?
 2. What is the difference between a scripting language and a markup language?  
 3. What is SQL?
 
@@ -376,7 +376,7 @@ PROMPT:
 (Part 2) Write a SQL query that will return all the plants that start with the letter p.
 
 INTERVIEWER'S NOTES:  
-- 1 - This is a spin on asking if the student considers themselves more introverted or extroverted. Encourage the student to have confidence in their answer no matter which they identify with.
+- 1 - This is an opportunity for the student to think about their pair programming experiences and reflect on the qualities of partners who help them grow as a developer.
 - 2 - Scripting language performs logic and a markup language creates the presentation or visual aspect of the app.
 - 3 - SQL stands for Structure Query Language and is a domaine specific language for querying relational databases.
 - Part 1: The goal of this section to get them asking questions and doing some creative thinking. Possible columns include plant species name, category, sunlight needs, price, pot size, projected growth, humidity needs, recommended watering/fertilizer schedule, etc. Encourage them to share a screen and write down their ideas.
